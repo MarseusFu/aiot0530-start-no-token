@@ -68,7 +68,11 @@ https://aiot0529.herokuapp.com/
 
 
 # My Version:
-### step3 :
+### step 3 add an heroku postgredb:
 ![image](https://i.imgur.com/A7rIDBh.png)
-### step4 :
+### step 4 login to heroku pstgredb using HeidiSQL:
 ![imgae](https://i.imgur.com/x7aWb8b.png)
+### step 5 import postgredb (in db/postgre.db):
+![imgae](https://i.imgur.com/uOSbCWt.png)
+### step 6 setting db in app.py:
+![image](https://i.imgur.com/jkAynuZ.png)
