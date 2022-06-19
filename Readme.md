@@ -76,6 +76,12 @@ https://aiot0529.herokuapp.com/
 ![imgae](https://i.imgur.com/uOSbCWt.png)
 ### step 6 setting db in app.py:
 ![image](https://i.imgur.com/jkAynuZ.png)
+因為發現此方法不可行(一段時間後會需要maintain database導致heroku那個app link不能用)，故用以下作法
+先上heroku找到你app，setting>config vars
+![image](heroku_appsetting.jpg)
+在照以下修改程式碼
+![image](maintain_db_1.jpg)
+![image](maintain_db_2.jpg)
 ### step 7 to 9 follow teacher's step
 ## Result :
 setRandom:<br>
