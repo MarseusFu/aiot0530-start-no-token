@@ -6,10 +6,12 @@ import json
 app = Flask(__name__)
 #0531 change 1
 # the following configuration must use heroku add-on postgredb
-myserver ="ec2-3-234-131-8.compute-1.amazonaws.com"
-myuser="hktjnamatdhlzd"
-mypassword="4295305ee47f9d5ee7a52987577197707637012e3c3e457ed588074566b8b47c"
-mydb="dfn86hup886b90"
+# myserver ="ec2-3-234-131-8.compute-1.amazonaws.com"
+# myuser="hktjnamatdhlzd"
+# mypassword="4295305ee47f9d5ee7a52987577197707637012e3c3e457ed588074566b8b47c"
+# mydb="dfn86hup886b90"
+
+DATABASE_URL='postgres://qxepdhrlkqtrrk:bdd75f9a35f2e0c21d4985037410e5a055fdd1f70b72476a03a071353b9d3375@ec2-34-198-186-145.compute-1.amazonaws.com:5432/d7idn8ohv62ljh'
 
 
 @app.route("/data.json")
@@ -59,7 +61,8 @@ def getData():
 	#    postgresql(heroku免費DB)
 	# psycopg2.connect(f'host={myserver} user={test123} password={test123} dbname={aiotdb}')
 
-	conn=psycopg2.connect(f'host={myserver} user={myuser} password={mypassword} dbname={mydb}')
+	
+	conn = psycopg2.connect(DATABASE_URL)
 	c = conn.cursor()
  
 
@@ -116,7 +119,7 @@ def getPredict():
 	# conn = pymysql.connect(host=myserver,user=myuser, passwd=mypassword, db=mydb)
 	
 	import psycopg2
-	conn=psycopg2.connect(f'host={myserver} user={myuser} password={mypassword} dbname={mydb}')
+	conn=psycopg2.connect(DATABASE_URL)
 	c = conn.cursor()
 	if debug:
 		input("pause.. conn.cursor() ok.......")
