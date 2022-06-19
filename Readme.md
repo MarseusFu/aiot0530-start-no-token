@@ -88,5 +88,4 @@ setRandom:<br>
 ![image](https://i.imgur.com/OHxMj04.png)<br>
 CallAI:<br>
 ![image](https://i.imgur.com/kaQqI3q.png)<br>
-**‧** Github - [Link](https://github.com/MarseusFu/aiot0530-start-no-token)<br>
 **‧** Heroku - [Link](https://aiot0531-test2.herokuapp.com/)
